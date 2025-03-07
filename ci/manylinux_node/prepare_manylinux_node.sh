@@ -10,7 +10,7 @@ install_node() {
 
 
     curl -LO https://unofficial-builds.nodejs.org/download/release/v18.20.7/node-v18.20.7-linux-x64-glibc-217.tar.gz
-    tar -xvf node-v18.20.7-linux-x64-glibc-217.tar.gz -C /usr/local
+    tar -xvf node-v18.20.7-linux-x64-glibc-217.tar.gz -C /root/.nvm/
 
 
 
@@ -19,7 +19,7 @@ install_node() {
 install_rust() {
     echo "Installing rust..."
     curl https://sh.rustup.rs -sSf | bash -s -- -y
-    export PATH="$PATH:/root/.cargo/bin:/usr/local/node-v18.20.7-linux-x64-glibc-217/bin"
+    export PATH="$PATH:/root/.cargo/bin:/root/.nvm/node-v18.20.7-linux-x64-glibc-217/bin"
 }
 
 install_node
