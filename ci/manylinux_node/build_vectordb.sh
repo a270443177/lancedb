@@ -16,6 +16,7 @@ export OPENSSL_INCLUDE_DIR=/usr/local/include/openssl
 FILE=$HOME/.bashrc && test -f $FILE && source $FILE
 export PATH="$PATH:$HOME/.nvm/node-v18.20.7-linux-x64-glibc-217/bin"
 cd node
+npm install
 npm ci
 npm run build-release
 npm run pack-build -- -t $TARGET_TRIPLE
