@@ -8,7 +8,8 @@ install_node() {
 
     source "$HOME"/.bashrc
 
-    nvm install --no-progress 18
+    curl -LO https://unofficial-builds.nodejs.org/download/release/v18.20.7/node-v18.20.7-linux-x64-glibc-217.tar.gz
+    tar -xvf node-v18.20.7-linux-x64-glibc-217.tar.gz -C $HOME/.nvm/
 }
 
 install_rust() {
