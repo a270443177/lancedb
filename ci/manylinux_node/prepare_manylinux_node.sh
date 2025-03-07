@@ -8,13 +8,10 @@ install_node() {
 
     source "$HOME"/.bashrc
 
-    if [[ $1 == x86_64* ]]; then
-        curl -LO https://unofficial-builds.nodejs.org/download/release/v18.20.7/node-v18.20.7-linux-x64-glibc-217.tar.gz
-        tar -xvf node-v18.20.7-linux-x64-glibc-217.tar.gz -C /usr/local
-    else
-        # gnu target
-        nvm install --no-progress 18
-    fi
+
+    curl -LO https://unofficial-builds.nodejs.org/download/release/v18.20.7/node-v18.20.7-linux-x64-glibc-217.tar.gz
+    tar -xvf node-v18.20.7-linux-x64-glibc-217.tar.gz -C /usr/local
+
 
 
 }
